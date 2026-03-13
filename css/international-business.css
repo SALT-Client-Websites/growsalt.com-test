@@ -1,0 +1,228 @@
+.ib-hero{
+   height: 500px;
+   padding-top: 10px;
+}
+.theme-salt-blue{
+    background-color: #84B3C5;
+}
+.div-box{
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+    
+}
+.input-rounded{
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+.input-rounded-white{
+    border-radius: 20px;
+    background-color: white;
+}
+.btn-rounded{
+    position: relative;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #84B3C5;
+}
+.form-col
+{
+    padding: 70px 40px 30px 40px;
+}
+.text-col{
+    padding: 20px 20px 10px 50px;
+}
+.how-col{
+    padding: 50px 0px 0px 70px;
+}
+.why-col{
+    padding: 40px;
+}
+.ib-salt{
+    background-color: #E6E8E8;
+}
+.ib-hero{
+    background-color: white;
+}
+/* Tab Process */
+.ib-container-line {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+ }
+.ib-container-line:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 20%;
+   margin-left: -2px;
+   margin-top:30px;
+   width: 4px;
+   height: 84%;
+   background: #84B3C5;;
+   z-index: 1
+} 
+
+ .ib-icon-content {
+    position: absolute;
+    left: 4%;
+ }
+ 
+ .ib-icon-content img {
+    width: 48px;
+    height: 50px;
+    /* transition: width 0.3s, height 0.3s;  */
+ }
+ 
+ .ib-process-block {
+    width: -webkit-calc(80% + 8px);
+    width: -moz-calc(80% + 8px);
+    width: calc(80% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+
+ .ib-process-block-right {
+    float: right;
+ }
+ 
+ .ib-marker {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid #84B3C5;;
+    background: white;
+    margin-top: 20px;
+    z-index: 1;
+ }
+ 
+ .ib-process-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+ }
+ 
+ .ib-process-content span {
+    font-size: 15px;
+    color: #a4a4a4;
+ }
+ 
+ .ib-process-content p { 
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+ }
+ .salt-crm{
+   position: absolute;
+   left: 50%;
+   bottom: 25%;
+   height: 450px;
+   width: 650px;
+ }
+
+ .ib-strategic{
+   background-color: #E6E8E8;
+ }
+ .ib-panel{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+ }
+.lcp{
+   display: flex;
+   justify-content: center;
+}
+.panel.ib-panel {
+   height: 570px;
+}
+ 
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .form-col{
+    padding: 20px 50px 20px 50px;
+  }
+  .text-col{
+    padding: 0px 40px 0px 40px;
+  }
+  .how-col, .why-col{
+    padding: 0px 40px 0px 40px;
+  }
+  .ib-hero
+  {
+      height: 800px;
+  } 
+  /* tab process */
+  .ib-container-line:before {
+      left: 8px;
+      width: 4px;
+      height:83%;
+   }
+   .ib-process-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .ib-process-block-right {
+      float: none;
+   }
+   .ib-icon-content{
+      position:relative;
+
+   }
+   .salt-crm {
+      position: relative;
+      bottom: 0; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      height: 250px;
+      width: 350px;
+    }
+    .lcp{
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tab process */
+  .ib-container-line:before {
+   left: 8px;
+   width: 4px;
+   height:81%;
+}
+.ib-process-block {
+   width: 100%;
+   margin-bottom: 30px;
+}
+.ib-process-block-right {
+   float: none;
+}
+.ib-icon-content{
+   position:relative;
+
+}
+.salt-crm {
+   position: relative; /* Change to relative positioning */
+   bottom: 0; /* Position it at the bottom */
+   left: 50%; /* Move it to the center */
+   transform: translateX(-50%); /* Center horizontally */
+   height: 350px;
+   width: 450px;
+   width: calc(33.333333% - 30px);
+ }
+ .lcp{
+   flex-direction: column;
+   align-items: center;
+   width: calc(33.333333% - 30px);
+ }
+}

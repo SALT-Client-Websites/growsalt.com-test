@@ -1,0 +1,202 @@
+/* Styles for Desktop View */
+.bg-blue {
+  background-color: #84b3c5;
+  color: white;
+}
+
+.bg-grey {
+  background-color: #e6e8e8;
+}
+
+.pricing-footer {
+  background-image: url(../images/resized/jpg/bg-ctmountain1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  font-family: Montserrat;
+}
+
+.pricing-table {
+  border: none;
+}
+
+.pricing-cards {
+  text-align: left; /* Center text within the pricing cards */
+  width: 100%;
+  margin: 0px 60px 0px 60px;
+}
+.pricing-card {
+  max-width: 200px;
+  margin: 15px 0 0 5px;
+}
+.pricing-cards .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-cards .pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-cards .pricing-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-card {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #84b3c5;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing-ribbon {
+  border: solid 1px;
+  background-color: #84b3c5;
+  color: white;
+  position: relative;
+  /* Adjust the left and top properties for ribbon positioning */
+  left: 10px;
+  transform: translateX(-50%);
+  top: -30px;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+.pricing-card-title {
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.pricing-card-content {
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+.card-sub-text,
+.sub-text {
+  font-size: 11px;
+  text-align: left;
+  font-family: Montserrat;
+}
+
+.title-text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sub-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+.team-support {
+  display: table-cell !important;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    margin: auto;
+  }
+  .pricing-card {
+    max-width: 350px;
+  }
+  .recommended {
+    width: 100%; /* Make the card take full width */
+    margin: 0;
+  }
+
+  .pricing-card-content {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .btn-card {
+    width: 100%;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+
+  .pricing-ribbon {
+    left: 38%;
+    transform: translateX(-50%);
+    top: -30px;
+    font-size: 10px;
+    position: relative;
+  }
+
+  .title-text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sub-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .font-42 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .recommended {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pricing-card-content {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .btn-card {
+    width: 100%;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+
+  .pricing-ribbon {
+    left: 40%;
+    transform: translateX(-50%);
+    top: -30px;
+    font-size: 10px;
+    position: relative;
+  }
+
+  .title-text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sub-text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .font-42 {
+    font-size: 24px;
+  }
+}

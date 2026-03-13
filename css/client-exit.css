@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main-page{
+    background-image: url("../images/intro-bkg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: black;
+    min-height: 100vh;
+}
+.client-exit-div {
+    background-color: black;
+    position: relative;
+    opacity: 0.7;
+    color: white !important;
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%; /* Adjust the width as needed */
+    margin: 50px auto;
+}
+
+.checked {
+    color: yellow;
+  }
+
+  @media (max-width: 767px) {
+    .client-exit-div {
+        margin: 20px auto; /* Adjust the mobile margin as needed */
+    }
+}

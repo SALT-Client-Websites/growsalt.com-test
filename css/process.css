@@ -1,0 +1,384 @@
+    .main-page {
+        display: flex;
+    }
+
+    .side{
+        width: 500px;
+        padding: 30px;
+        height: 100%;
+        background-color: #3D3F40;
+        color: white;
+        position: relative;
+        padding-bottom:30vh;
+        flex:wrap;
+    }
+    .timeline {
+        list-style: none;
+        padding: 0;
+    }
+
+    .step {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .title-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    #process-header-text:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in;
+      
+    }
+    #process-header-text{
+        transition: transform 0.5s ease-out;
+    }
+
+    .step-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        border: solid 3px #84B3C5;
+        color: white;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .step-title {
+        margin-left: 10px;
+        cursor: pointer;
+        color: #84B3C5;
+        max-width: calc(100% - 30px); 
+          transition: transform 0.5s ease-out;
+    }
+    .step-title:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .step-title.active {
+        color: #ffffff;
+        font-size: 20px;
+        padding: auto;
+        font-weight: bold;
+    }
+
+
+    .step-content {
+        display: none;
+        padding: 10px;
+        color: white;
+        margin-left: 60px;
+        font-size: 12px;
+        max-width: calc(100% - 60px);
+    }
+
+    .step-image {
+        width: 25px;
+        height: 22px;
+    }
+
+    .step-image.active {
+        width: 40px;
+        height: 35px;
+        margin-right: 5px;
+    }
+
+    .step-dot.active {
+        top: 20px;
+    }
+
+    .show-content {
+        display: block;
+    }
+
+    .timeline-line {
+        position: absolute;
+        top: 0;
+        left: 55px;
+        height: 100%;
+        width: 5px;
+        background-color: #84B3C5;
+    }
+
+    /* Client Discovery Content */
+    .topic-list ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .topic-list li {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .topic-list li:before {
+        content: "﹥";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: #84B3C5;
+        color: white;
+        text-align: center;
+        line-height: 25px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 12pt; 
+    }
+
+    .timeline-image {
+        width: 90%;
+        border: 3px solid #84B3C5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    /* List Building */
+    .internal-database-list ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .internal-database-list li {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .internal-database-list li:before {
+        content: "✔";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #84B3C5;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 8pt; 
+    }
+    .list-sources-img{
+        width:95%;
+    }
+    /* Account Qualification */
+
+    .pre-a{
+        content: ">";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #84B3C5;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 10pt; 
+    }
+
+    .pre-b{
+        content: ">";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #252728;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 10pt; 
+    }
+
+    .pre-c{
+        content: ">";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #ECD182;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 10pt; 
+    }
+
+    .pre-d{
+        content: ">";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color:#DB736D;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 10pt; 
+    }
+    .pre-qual{
+        width:80%;
+    }
+    .decision-maker{
+        width: 50%;
+    }
+
+    .a-account{
+        background-color: #84B3C5;
+        color:white;
+        width:120px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        margin:15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .b-account{
+        background-color: #252728;
+        color:white;
+        width:120px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        margin:15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .c-account{
+        background-color: #84B3C5;
+        color:white;
+        width:120px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        margin:15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .outsource-card{
+        position: relative;
+        height:300px;
+        width: 146px;
+        padding:5px;
+        background-color: #3D3F40;
+        color:white;
+        margin:5px;
+        border-radius:20px;
+        padding:20px;
+        font-weight: bold;
+        
+    }
+    .text-salt-blue{
+        color:#84B3C5;
+    }
+    .check-circle{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #84B3C5;
+        color: white;
+        text-align: center;
+        line-height: 20px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 10pt; 
+    }
+
+    .circle-a{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #84B3C5;
+        color: white;
+        text-align: center;
+        line-height: 18px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 7pt; 
+    }
+
+    .circle-b{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #6AC5AE;
+        color: white;
+        text-align: center;
+        line-height: 18px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 7pt; 
+    }
+
+    .circle-c{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #ECD182;
+        color: white;
+        text-align: center;
+        line-height: 18px; 
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 7pt; 
+    }
+
+    .call-to-action{
+        background-color: #3D3F40;
+        padding:30px;
+        width: 90%; 
+        margin-top:15px;
+    }
+
+    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+    @media (max-width: 768px) {
+        .side{
+            display: none;
+        }
+        .timeline-image {
+            width: 100%; /* Make it full width on smaller screens */
+            padding-top: 20px; /* Adjust padding for smaller screens */
+            padding-bottom: 20px; /* Adjust padding for smaller screens */
+        }
+        .outsource-card{
+            width: 300px;
+            margin: 10px auto;
+        }
+        .a-account,
+        .b-account,
+        .c-account {
+            width: 100%; /* Make the buttons full width */
+            margin: 10% auto; /* Adjust margin for better spacing */
+        }
+
+
+        .a-account-div,
+        .b-account-div,
+        .c-account-div {
+            width: 100%; /* Make the buttons full width */
+            margin: 10% auto; /* Adjust margin for better spacing */
+            text-align: center;
+        }
+
+        .call-to-action{
+            width: 100%;
+       
+        }
+        .call-to-action h3{
+            font-size: 16px;
+        }
+       
+    }

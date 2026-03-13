@@ -1,0 +1,153 @@
+.hero-image{
+    border-radius:10px;
+    height: 380px;
+ }
+ .theme-salt-blue{
+    background-color: #84B3C5;
+}
+.div-box{
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+}
+.input-rounded{
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+.input-rounded-white{
+    border-radius: 20px;
+    background-color: white;
+}
+.btn-rounded{
+    position: relative;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #84B3C5;
+}
+.form-col
+{
+    padding: 30px 40px 30px 40px;
+}
+.text-col{
+    padding: 20px 20px 10px 50px;
+}
+.how-col{
+    padding: 50px 0px 0px 70px;
+}
+.why-col{
+    padding: 40px;
+}
+.ib-salt{
+    background-color: #E6E8E8;
+}
+.ib-hero{
+    background-color: white;
+}
+.font-extrabold{
+    font-weight: bolder;
+}
+.accounts-targeted-div{
+    background-color: #e8e9e9;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.daily{
+    background-color: #3c3e3f;
+    border-radius: 10px;
+}
+.quot{
+    background-color: #3c3e3f;
+    border-radius: 10px;
+}
+.border-circle{
+    border: 1px solid black;
+}
+
+/* Carousel */
+.owl-carousel .item {
+    background-color: #e8e9e9;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+}
+.btns{
+  display: table;
+  margin: 10px;
+}
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px; 
+}
+.hero-title-nd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+    color: white; 
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px; 
+}
+.no-wrap{
+    white-space: nowrap; 
+    font-size: 13px; 
+    padding:0;
+}
+.clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:10px;
+    margin: 20px;
+}
+
+.logo {
+    width: 200px; 
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+/* .logo img {
+    width: 100%; 
+    height: 200px; 
+} */
+.owl-carousel .quot{
+    background-color: #84B3C5;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+}
+.client{
+    background-color: #e8e9e9;
+    border-radius: 10px;
+    margin:20px;
+}
+.client-text
+{
+    background-color: #e8e9e9;
+    border-radius: 10px;
+    margin:20px;
+    padding:30px;
+}
+
+
+@media (max-width: 767px) {
+    .owl-carousel .item {
+        flex-direction: column;
+    }
+}
+

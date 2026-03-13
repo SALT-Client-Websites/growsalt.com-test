@@ -1,0 +1,153 @@
+
+  .menuzord-menu {
+    margin-left: 30px;
+  }
+  .menuzord-menu>li {
+    margin-right: 30px;
+   
+  }
+  .menuzord-menu>li:last-child {
+    margin-right: 0;
+    
+  }
+  .menuzord-menu>li>a {
+    padding: 15px 10px;
+  }
+  .menuzord-menu>li:last-child>a {
+    margin-right: 0;
+  }
+  .menuzord-menu>li:last-child>a {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 15px 20px;
+  }
+
+  .latest-posts .post-thumb img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  /* Owl dots */
+  .owl-carousel-1col .owl-dot {
+    width: 28px;
+    height: 28px; 
+  }
+
+
+.text-salt-blue{
+  color:#84B3C5;
+}
+.text-bolder{
+  font-weight:900;
+}
+.brochure-items-container {
+    padding-top: 0.2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .brochure-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+  }
+  
+  .brochure-item > h5 {
+    margin: 0 0 0 6px;
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .brochure-item > input {
+    margin-top: 0;
+    height: 100%;
+    width: 12px;
+  }
+  
+  #download-brochure-form {
+    background-color: #DFE0E1;
+  }
+  
+  .brochure-form-text {
+    color: #777777;
+  }
+  
+  .btn-custom {
+      background-color: #84B3C5 !important;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  .btn-custom:hover {
+      background-color: #31566E !important;
+      color: white;
+  }
+  .btn-custom-reverse{
+    background-color: #31566E !important;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-custom-reverse:hover{
+    background-color: #84B3C5 !important;
+    color: white;
+  }
+  
+  #close-download-brochure-form {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;.brochure-items-container {
+        padding-top: 0.2rem;
+        padding-bottom: 2rem;
+      }
+      
+      .brochure-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: auto;
+      }
+      
+      .brochure-item > h5 {
+        margin: 0 0 0 6px;
+        font-family: Roboto;
+        display: flex;
+        align-items: center;
+      }
+      
+      .brochure-item > input {
+        margin-top: 0;
+        height: 100%;
+        width: 12px;
+      }
+      
+      #download-brochure-form {
+        background-color: #DFE0E1;
+      }
+      
+      .brochure-form-text {
+        color: #777777;
+      }
+      
+      #close-download-brochure-form {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+      }  
+      
+
+    }    
+/* Your custom css codes start here: */

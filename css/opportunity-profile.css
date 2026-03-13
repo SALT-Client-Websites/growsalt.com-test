@@ -1,0 +1,72 @@
+.date-box{
+   margin-top: 5px;
+   margin-right:5px;
+   text-align: center;
+   padding:5px;
+   background-color:#84B3C5;
+   width:50px;
+   height: 100%;
+}
+.op-title {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Center items vertically */
+  }
+
+.date-box {
+    order: 1; /* Specify order, date-box will appear first */
+}
+
+.text-box {
+order: 2; /* Specify order, text-box will appear second */
+}
+.text-box h4{
+    font-size: 24px;
+}
+.bg-theme-blue-cta{
+    background-color: #84B3C5;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.salt-process-intro li{
+    font-size: 16px;
+}
+.opportunity-footer{
+    background-image: url(../images/resized/rockclimber.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    font-family: Montserrat; 
+}
+
+.process-title {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .process-title {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    img {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .op-title {
+        flex-direction: column; /* Switch to vertical layout on smaller screens */
+      }
+  
+      .date-box,
+      .text-box {
+        order: 0; /* Reset order for default stacking on smaller screens */
+        width: 100%; /* Make both boxes take full width */
+      }
+}

@@ -1,0 +1,113 @@
+.stepper-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stepper-dot {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.stepper-dot.active {
+    background-color: #6890a2;
+}
+
+.stepper-line {
+    flex-grow: 1;
+    height: 4px;
+    background-color: gray;
+}
+
+.stepper-line.active {
+    background-color: #6890a2;
+}
+
+.step-number {
+    padding-left: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.modal {
+    text-align: center;
+    border-radius: 25px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.modal-body,
+.modal-content {
+    background-color: #DFE0E1;
+}
+
+.step-question {
+    color: #7A9CAB;
+}
+
+.question-label {
+    color: #727475;
+}
+
+.step-content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.question1-answer-option {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+.btn-prev {
+    background-color: #838489;
+    color: #FFFFFF;
+}
+
+.btn-next {
+    background-color: #6890A2;
+    color: #FFFFFF;
+}
+
+.btn-close:hover {
+    background-color: #838489;
+    color: #FFFFFF
+}
+
+.changed-color {
+    background-color: #1AB9E7;
+    color: white;
+}
+.error-message {
+    display: none;
+    color: red;
+}
+.emphasis-text {
+    font-weight: bold; /* Makes the text bold */
+    color: #6890A2; /* Sets the text color to red (you can choose any color you prefer) */
+    text-decoration: underline; /* Adds an underline to the text */
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}

@@ -1,0 +1,325 @@
+/* ============================================================
+   About Page — Custom Styles
+   growsalt.com / css/about-section.css
+   Brand: #BF9E58 (gold/primary)  |  #6890a2 (steel blue/secondary)
+   ============================================================ */
+
+/* ---- About Intro Section ---- */
+.about-intro-section {
+    padding: 70px 0;
+}
+
+.about-row {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* Left: image column */
+.about-img-col {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img-wrap {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.12);
+    background: #f0ede9;
+}
+
+.about-portrait {
+    width: 100% !important;
+    height: 420px;
+    object-fit: cover;
+    object-position: center 12%;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.about-img-wrap:hover .about-portrait {
+    transform: scale(1.03);
+}
+
+/* Right: content column */
+.about-content-col {
+    padding-left: 20px;
+}
+
+.about-content-col .lead {
+    font-size: 17px;
+    color: #444;
+}
+
+.about-content-col p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-content-col .title {
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: #333;
+}
+
+.mb-18 { margin-bottom: 18px; }
+
+.about-divider {
+    height: 2px;
+    width: 50px;
+    background: #BF9E58;
+    border-radius: 2px;
+    margin-bottom: 0;
+}
+
+/* ---- Pull Quote ---- */
+.about-pull-quote {
+    background: #faf8f0;
+    border-left: 4px solid #BF9E58;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+    margin-top: 22px;
+}
+
+.about-quote-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+    font-style: italic;
+    margin: 0 0 6px;
+}
+
+.about-quote-cite {
+    font-size: 12px;
+    font-weight: 700;
+    color: #BF9E58;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ---- Core Competencies ---- */
+.about-competencies {
+    margin-top: 20px;
+}
+
+.about-comp-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #999;
+    margin: 0 0 12px;
+}
+
+.about-comp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-comp-list li {
+    font-size: 14px;
+    color: #555;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-comp-list li:last-child {
+    border-bottom: none;
+}
+
+.about-comp-list li .fa {
+    color: #6890a2;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+/* ---- Leadership Team ---- */
+.lt-section {
+    padding: 70px 0 80px;
+    background: #f8f9fa;
+}
+
+.lt-header {
+    margin-bottom: 42px;
+}
+
+.lt-heading {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #6890a2;
+    display: inline-block;
+}
+
+.lt-subheading {
+    font-size: 15px;
+    color: #888;
+    margin: 10px 0 0;
+}
+
+.lt-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lt-row > div {
+    margin-bottom: 24px;
+}
+
+/* Card */
+.lt-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-top: 3px solid #6890a2;
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-top-color 0.3s ease;
+    overflow: hidden;
+}
+
+.lt-card:hover {
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.11);
+    transform: translateY(-5px);
+    border-top-color: #BF9E58;
+}
+
+/* Photo */
+.lt-photo-wrap {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 28px auto 0;
+    border: 3px solid #eaeaea;
+    transition: border-color 0.3s ease;
+}
+
+.lt-card:hover .lt-photo-wrap {
+    border-color: #BF9E58;
+}
+
+.lt-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+    display: block;
+}
+
+/* Info */
+.lt-info {
+    padding: 16px 20px 26px;
+}
+
+.lt-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 5px;
+}
+
+.lt-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #6890a2;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: block;
+    line-height: 1.4;
+}
+
+.lt-divider {
+    height: 2px;
+    width: 36px;
+    background: #BF9E58;
+    border-radius: 2px;
+    margin: 14px auto;
+}
+
+.lt-bio {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+    text-align: left;
+}
+
+/* ---- Tech Stats Row ---- */
+.tech-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 36px 20px;
+    margin: 36px 0 30px;
+    text-align: center;
+}
+
+.tech-stat-item {
+    flex: 1 1 20%;
+    padding: 12px 16px;
+    position: relative;
+}
+
+.tech-stat-item + .tech-stat-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background: #ececec;
+}
+
+.tech-stat-num {
+    font-size: 48px;
+    font-weight: 800;
+    color: #BF9E58;
+    line-height: 1;
+    font-family: inherit;
+}
+
+.tech-stat-suffix {
+    font-size: 28px;
+    font-weight: 700;
+    color: #BF9E58;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.tech-stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #999;
+    margin: 8px 0 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+    .about-intro-section { padding: 50px 0; }
+    .about-img-col { padding-right: 15px; margin-bottom: 30px; }
+    .about-content-col { padding-left: 15px; }
+    .about-portrait { height: 320px; }
+    .lt-section { padding: 50px 0 60px; }
+}
+
+@media (max-width: 767px) {
+    .about-portrait { height: 260px; }
+    .about-intro-section { padding: 36px 0; }
+    .lt-card { max-width: 360px; margin-left: auto; margin-right: auto; }
+}

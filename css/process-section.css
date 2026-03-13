@@ -1,0 +1,566 @@
+#process-section{
+    padding-top:50px;
+    margin-top:-50px;
+    
+    .card-content{
+        background-color:#333;
+        color:white;
+        border: solid 1px;
+        height: 140px;
+        width:940px;
+        border-radius:20px;
+        margin-left:122px;
+    }
+    .proc-p{
+        display:none;
+    }
+    .mobile-title{
+        display:none;
+    }
+    .line
+    {
+        position: absolute;
+        width: 780px; 
+        height: 7px;
+        bottom:41%;
+        z-index:1;
+        left: 40px;
+        margin:auto;
+        right: 0;
+        background-color: #3D3F40; 
+    }
+    .cont-title{
+        color:white;
+        font-size: 38px;
+        position: absolute;
+        left:40%;
+        top:10px;
+    }
+    .logo-col{
+        
+        margin:auto;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    .logo-col img{
+        height: 100px;
+    }
+    .text-col{
+        padding: 20px 30px 10px 0px;
+    }
+    .details-col{
+        padding-right: 80px;
+    }
+    .process-card{
+        position: relative;
+        height:250px;
+        width: 150px;
+        background-color: #E6E8E8;
+        margin:10px;
+        border-radius:20px;
+        padding:10px;
+        font-weight: bold;
+    }
+    .cards-container{
+        margin: 0px 105px 0px 105px;
+    }
+    .active-card {
+            background-color: #84B3C5;
+    }
+    .content-div {
+        position: relative;
+        border-radius: 20px; 
+        color: white;
+        width: 1175px;
+        height: 200px;
+        padding: 50px;
+        margin:20px;
+        background-color: #3D3F40;
+        box-sizing: border-box; 
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .img-cont img{
+        max-width: 75px; /* Set the maximum width for the images */
+        max-height: 75px; /* Set the maximum height for the images */
+        margin: 30px 0px 0px 10px;
+        padding: 5px;
+    }
+    .process-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 75px 5px 75px;
+
+    }
+    .process-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px 45px 5px 45px;
+    }
+    .process-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .active-dot{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: 6px solid #3D3F40;
+        border-radius: 50%;
+        position: absolute;
+        bottom:40%;
+        left: 46%;
+        z-index: 1;
+    }
+    .active-title{
+        color:white;
+        font-weight:bold;
+    }
+    #client
+    {
+        position: absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #list{
+        position: absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #account{
+        position: absolute;
+       bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #contact{
+        position: absolute;
+       bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #relationship, #opportunity{
+        position: absolute;
+        bottom:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (min-width: 300px) and (max-width:499px) {
+    .cards-container{
+        margin:auto;
+    }
+    .card-content 
+    {
+        width: auto; 
+        height: auto;
+        text-align:left;
+        margin: 10px 0px 0px 0px !important;
+        display: flex;
+        flex-direction: column;
+        display:none;
+    }
+    .line{
+        display:none;
+    }
+    .title-col{
+        order: 1; 
+        text-align:center;
+    }
+    .image-col {
+        order: 2;
+        text-align:center;
+    }
+    .details-col{
+        order:3;
+        text-align:justify;
+        justify-content:center;
+        margin:20px 0px 0px 10px !important;
+    }
+    .font-18 
+    {
+        font-size: 16px;
+    }
+    .process-card 
+    {
+        width: 300px; 
+        height: 380px!important; 
+        display:flex;
+        flex-direction:column;
+        text-align: center; 
+        font-size:16px !important;
+    }
+    
+    .client-dot{
+        display:none;
+    }
+    .proc-title br
+    {
+        white-space: nowrap;
+    }
+    .img-cont{
+        order:2 !important;
+        padding-top:40px;
+    }
+    .proc-title{
+        padding-top:30px !important;
+        order:1 !important;
+    }
+    .proc-p 
+    {
+        display:block;
+        order:3 !important;
+        color: black !important;
+        padding:5px 5px 5px 5px !important;
+        margin-bottom: 10px;
+    }
+    #client
+    {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #list{
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #account{
+        position: absolute;
+          top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #contact{
+        position: absolute;
+          top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #relationship, #opportunity{
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+       
+    }
+    @media screen and (max-width: 600px)  and (min-width:500px){
+        .cards-container{
+            margin:auto;
+        }
+        .card-content 
+        {
+            width: auto; 
+            height: auto;
+            text-align:left;
+            margin: 10px 0px 0px 0px !important;
+            display: flex;
+            flex-direction: column;
+            display:none;
+        }
+        .line{
+            display:none;
+        }
+        .title-col{
+            order: 1; 
+            text-align:center;
+        }
+        .image-col {
+            order: 2;
+            text-align:center;
+        }
+        .details-col{
+            order:3;
+            text-align:justify;
+            justify-content:center;
+            margin:20px 0px 0px 10px !important;
+        }
+        .font-18 
+        {
+            font-size: 16px;
+        }
+        .process-card 
+        {
+            width: 300px; 
+            height: 380px!important; 
+            display:flex;
+            flex-direction:column;
+            text-align: center; 
+            font-size:16px !important;
+        }
+        
+        .client-dot{
+            display:none;
+        }
+        .proc-title br
+        {
+            white-space: nowrap;
+        }
+        .img-cont{
+            order:2 !important;
+            padding-top:40px;
+        }
+        .proc-title{
+            padding-top:30px !important;
+            order:1 !important;
+        }
+        .proc-p 
+        {
+            display:block;
+            order:3 !important;
+            color: black !important;
+            padding:5px 5px 5px 5px !important;
+            margin-bottom: 10px;
+        }
+        #client
+        {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        #list{
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #account{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #contact{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #relationship, #opportunity{
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+           
+    }
+    /* Large Mobile Screens - up to 768px */
+    @media screen and (min-width: 500px) and (max-width:900px) {
+        .cards-container{
+            margin:auto;
+        }
+        .card-content 
+        {
+            width: auto; 
+            height: auto;
+            text-align:left;
+            margin: 10px 0px 0px 0px !important;
+            display: flex;
+            flex-direction: column;
+            display:none;
+        }
+        .line{
+            display:none;
+        }
+        .title-col{
+            order: 1; 
+            text-align:center;
+        }
+        .image-col {
+            order: 2;
+            text-align:center;
+        }
+        .details-col{
+            order:3;
+            text-align:justify;
+            justify-content:center;
+            margin:20px 0px 0px 10px !important;
+        }
+        .font-18 
+        {
+            font-size: 16px;
+        }
+        .process-card 
+        {
+            width: 300px; 
+            height: 380px!important; 
+            display:flex;
+            flex-direction:column;
+            text-align: center; 
+            font-size:16px !important;
+        }
+        
+        .client-dot{
+            display:none;
+        }
+        .proc-title br
+        {
+            white-space: nowrap;
+        }
+        .img-cont{
+            order:2 !important;
+            padding-top:40px;
+        }
+        .proc-title{
+            padding-top:30px !important;
+            order:1 !important;
+        }
+        .proc-p 
+        {
+            display:block;
+            order:3 !important;
+            color: black !important;
+            padding:5px 5px 5px 5px !important;
+            margin-bottom: 10px;
+        }
+        #client
+        {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        #list{
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #account{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #contact{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #relationship, #opportunity{
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    }
+    /* Tablets - up to 1024px */
+    @media screen and (min-width: 900px ) and (max-width:980px) {
+        .cards-container{
+            margin:auto;
+        }
+        .card-content 
+        {
+            width: auto; 
+            height: auto;
+            text-align:left;
+            margin: 10px 0px 0px 0px !important;
+            display: flex;
+            flex-direction: column;
+            display:none;
+        }
+        .line{
+            display:none;
+        }
+        .title-col{
+            order: 1; 
+            text-align:center;
+        }
+        .image-col {
+            order: 2;
+            text-align:center;
+        }
+        .details-col{
+            order:3;
+            text-align:justify;
+            justify-content:center;
+            margin:20px 0px 0px 10px !important;
+        }
+        .font-18 
+        {
+            font-size: 16px;
+        }
+        .process-card 
+        {
+            width: 300px; 
+            height: 380px!important; 
+            display:flex;
+            flex-direction:column;
+            text-align: center; 
+            font-size:16px !important;
+        }
+        
+        .client-dot{
+            display:none;
+        }
+        .proc-title br
+        {
+            white-space: nowrap;
+        }
+        .img-cont{
+            order:2 !important;
+            padding-top:40px;
+        }
+        .proc-title{
+            padding-top:30px !important;
+            order:1 !important;
+        }
+        .proc-p 
+        {
+            display:block;
+            order:3 !important;
+            color: black !important;
+            padding:5px 5px 5px 5px !important;
+            margin-bottom: 10px;
+        }
+        #client
+        {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        #list{
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #account{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #contact{
+            position: absolute;
+              top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #relationship, #opportunity{
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    }
+}
+  
