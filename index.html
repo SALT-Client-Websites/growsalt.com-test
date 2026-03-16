@@ -59,6 +59,24 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <!-- Calendly -->
 
+  <!-- SALT CRM Chat Tool  -->
+  <script async type="text/javascript">
+    $(document).ready(function() {
+      if (window.innerWidth > 768) {
+        var chatIframe = document.createElement('iframe');
+        chatIframe.src = 'https://login.salt-crm.com/salt_chat.php?site_code=e18677e811280f92ab2f959352d7c1';
+        chatIframe.title = 'SALT CHAT TOOL';
+        chatIframe.style.cssText = 'position: fixed; bottom: 33px; right: 0; z-index:9999; width: 470px; max-width: 470px; height: 700px;';
+        chatIframe.width = '450';
+        chatIframe.height = '500';
+        chatIframe.frameBorder = '0';
+        chatIframe.id = 'saltChatIframe';
+        document.body.appendChild(chatIframe);
+      }
+    });
+  </script>
+  <!-- SALT CRM Chat Tool  -->
+
   <!-- ZoomInfo Tracking Tag -->
   <script>
     window[(function(_PhO, _e7) {
@@ -297,7 +315,7 @@
                 <li><a href="crm">CRM</a></li>
                  <li><a href="about">About</a></li>
                 <li><a href="blog">Blog</a></li>
-                <li class="pull-right pl-10"><a href="https://login.salt-crm.com/loginhtml"><i class="fa fa-lock"></i>CRM Login</a></li>
+                <li class="pull-right pl-10"><a href="https://login.salt-crm.com/login.php"><i class="fa fa-lock"></i>CRM Login</a></li>
                 <!-- <li style="padding-right:75px"><a href="/contact">Contact</a></li> -->
               </ul>
             </nav>
@@ -317,32 +335,12 @@
 
 </html>
 <link href="css/about-section.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/about.min.js"></script>
-<script type="text/javascript" src="js/custom.min.js"></script>
 
 <!-- Start main-content -->
 <div class="main-content">
 
-  <!-- Section: inner-header -->
-  <section class="inner-header divider layer-overlay overlay-dark-4" data-bg-img="http://placehold.it/4200x2800">
-    <div class="container pt-120 pb-60">
-      <div class="section-content">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="text-theme-colored2 font-36">About</h2>
-            <ol class="breadcrumb text-left mt-10 white">
-              <li><a href="indexhtml">Home</a></li>
-              <li><a href="#">Pages</a></li>
-              <li class="active">About Us</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section: About / Who We Are -->
-  <section class="about-intro-section">
+  <section>
     <div class="container">
       <div class="section-content">
         <div class="row about-row">
@@ -350,7 +348,7 @@
           <!-- Left: Anthony image -->
           <div class="col-xs-12 col-md-5 about-img-col">
             <div class="about-img-wrap">
-              <img class="about-portrait" alt="Anthony Colarusso - SALT Founder" src="images/about/anthony.webp">
+              <img class="about-portrait" alt="Anthony Colarusso - SALT Founder" src="images/about/anthony_pic.webp">
             </div>
             <div class="about-founder-caption mt-20">
               <h4 class="font-weight-700 mt-0 mb-5" style="font-size:18px; color:#1a1a1a;">Anthony Colarusso</h4>
@@ -358,16 +356,16 @@
               <div class="about-divider mb-18"></div>
               <div class="row mt-18" style="margin-top:18px;">
                 <div class="col-xs-4 text-center">
-                  <div style="font-size:28px; font-weight:800; color:#d4622a; line-height:1;">10<span style="font-size:16px;">+</span></div>
+                  <div style="font-size:28px; font-weight:800; color:#BF9E58; line-height:1;">10<span style="font-size:16px;">+</span></div>
                   <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#999; margin-top:4px;">Years</div>
                 </div>
                 <div class="col-xs-4 text-center">
-                  <div style="font-size:28px; font-weight:800; color:#d4622a; line-height:1;">500<span style="font-size:16px;">+</span></div>
+                  <div style="font-size:28px; font-weight:800; color:#BF9E58; line-height:1;">500<span style="font-size:16px;">+</span></div>
                   <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#999; margin-top:4px;">Clients</div>
                 </div>
                 <div class="col-xs-4 text-center">
-                  <div style="font-size:28px; font-weight:800; color:#d4622a; line-height:1;">60<span style="font-size:16px;">+</span></div>
-                  <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#999; margin-top:4px;">LinkedIn</div>
+                  <div style="font-size:28px; font-weight:800; color:#BF9E58; line-height:1;">400<span style="font-size:16px;">+</span></div>
+                  <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:#999; margin-top:4px;">Built Programs</div>
                 </div>
               </div>
 
@@ -406,9 +404,7 @@
             <p class="mb-20">While working closely with Tier 1 and Tier 2 suppliers, Anthony consistently saw disciplined production systems driven by defined processes and measurable KPIs. Yet when conversations shifted to sales, that discipline often disappeared. Production was measured down to the millisecond and penny; yet sales frequently lacked a defined process, consistent measurement, or visibility. A thesis began to form: apply supply chain principles to the sales side of the business.</p>
 
             <h4 class="title text-uppercase font-weight-600 mb-10">Our Core Philosophy</h4>
-            <p class="mb-25">Today, SALT is built on Anthony's core thesis: In sales, process drives results more than technique. When the right actions are executed consistently, at the right frequency, within a defined system, growth becomes measurable, repeatable, and scalable.</p>
-
-            <a class="btn btn-colored btn-theme-colored2 btn-sm" href="#">View Details</a>
+            <p class="mb-0">Today, SALT is built on Anthony's core thesis: In sales, process drives results more than technique. When the right actions are executed consistently, at the right frequency, within a defined system, growth becomes measurable, repeatable, and scalable.</p>
           </div>
 
         </div>
@@ -417,94 +413,78 @@
   </section>
 
   <!-- Section: Core Values -->
-  <section class="parallax layer-overlay overlay-dark-6" data-bg-img="http://placehold.it/1920x1280" data-bg-parallax="0.3">
-    <div class="container pb-sm-20">
-      <div class="section-title">
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="text-uppercase text-white title">Our Core <span class="text-theme-colored2">Values</span></h2>
-            <div class="line-bottom-theme-colored2"></div>
-          </div>
-          <div class="col-md-8">
-            <p class="text-white mt-5 font-16 sm-text-left text-right">The principles that guide everything we do at SALT Marketing</p>
+  <section class="cv-section parallax layer-overlay overlay-dark-8" data-bg-parallax="0.3">
+    <div class="container">
+      <div class="row cv-layout">
+
+        <!-- Left: Section Intro -->
+        <div class="col-xs-12 col-md-4 cv-intro-col">
+          <span class="cv-eyebrow">What Drives Us</span>
+          <h2 class="cv-main-title">Our Core <br><span class="cv-title-accent">Values</span></h2>
+          <p class="cv-intro-text">The principles that guide every decision, every campaign, and every client relationship at SALT Marketing.</p>
+          <div class="cv-intro-divider"></div>
+          <p class="cv-intro-note">These aren't aspirational — they're operational. Every team member is held to them daily.</p>
+        </div>
+
+        <!-- Right: 2x2 Value Cards -->
+        <div class="col-xs-12 col-md-8 cv-cards-col">
+          <div class="row cv-cards-row">
+
+            <!-- Experimentation -->
+            <div class="col-xs-12 col-sm-6 cv-card-wrap">
+              <div class="cv-card">
+                <div class="cv-card-header">
+                  <div class="cv-icon-wrap"><i class="fa fa-flask"></i></div>
+                  <span class="cv-step-num">01</span>
+                </div>
+                <h4 class="cv-card-title">Experimentation</h4>
+                <p class="cv-card-tagline">Test &amp; Measure Everything</p>
+                <p class="cv-card-body">At SALT, we don't bring ideas — we bring experiments. Every initiative starts with a hypothesis, a defined outcome, and clear metrics. The goal isn't activity. It's tested, measurable progress.</p>
+              </div>
+            </div>
+
+            <!-- Intentionality -->
+            <div class="col-xs-12 col-sm-6 cv-card-wrap">
+              <div class="cv-card">
+                <div class="cv-card-header">
+                  <div class="cv-icon-wrap"><i class="fa fa-bullseye"></i></div>
+                  <span class="cv-step-num">02</span>
+                </div>
+                <h4 class="cv-card-title">Intentionality</h4>
+                <p class="cv-card-tagline">Purpose-Driven Action</p>
+                <p class="cv-card-body">We challenge ourselves to be intentional in everything — especially what's working. By constantly asking why, we stay aligned with our mission and avoid drifting into autopilot.</p>
+              </div>
+            </div>
+
+            <!-- Ownership -->
+            <div class="col-xs-12 col-sm-6 cv-card-wrap">
+              <div class="cv-card">
+                <div class="cv-card-header">
+                  <div class="cv-icon-wrap"><i class="fa fa-shield"></i></div>
+                  <span class="cv-step-num">03</span>
+                </div>
+                <h4 class="cv-card-title">Ownership</h4>
+                <p class="cv-card-tagline">Full Accountability</p>
+                <p class="cv-card-body">Every action is logged, tracked, and visible — not for micromanagement, but for accountability. High agency creates clarity. And clarity creates satisfaction, performance, and trust.</p>
+              </div>
+            </div>
+
+            <!-- Process -->
+            <div class="col-xs-12 col-sm-6 cv-card-wrap">
+              <div class="cv-card">
+                <div class="cv-card-header">
+                  <div class="cv-icon-wrap"><i class="fa fa-cogs"></i></div>
+                  <span class="cv-step-num">04</span>
+                </div>
+                <h4 class="cv-card-title">Process</h4>
+                <p class="cv-card-tagline">Systematic Approach</p>
+                <p class="cv-card-body">Our six-step framework — Discovery, List Building, Qualification, Verification, Nurturing, and Opportunity ID — ensures consistency. Process creates consistency. Automation creates leverage. Leverage creates scalable growth.</p>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-      <div class="section-content">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-            <div class="image-box-thumb">
-              <img class="img-fullwidth" alt="" src="http://placehold.it/250x135">
-              <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled team-social-icon clearfix mt-10">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="image-box-details pt-15 pb-sm-20">
-              <a href="#">
-                <h4 class="title text-uppercase text-white font-weight-600 mt-0 mb-5">Experimentation</h4>
-              </a>
-              <h6 class="text-gray-lightgray mt-0"><em>Test &amp; Measure</em></h6>
-              <p class="text-white">At SALT, we don't bring ideas, we bring experiments. Every new initiative starts with a hypothesis, a defined outcome, and clear metrics. As Jeff Bezos says, "The cost of experiments is usually small. Things only get expensive when they work." The goal isn't activity. It's tested, measurable progress.</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-            <div class="image-box-thumb">
-              <img class="img-fullwidth" alt="" src="http://placehold.it/250x135">
-              <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled team-social-icon clearfix mt-10">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="image-box-details pt-15 pb-sm-20">
-              <a href="#">
-                <h4 class="title text-uppercase text-white font-weight-600 mt-0 mb-5">Intentionality</h4>
-              </a>
-              <h6 class="text-gray-lightgray mt-0"><em>Purpose-Driven</em></h6>
-              <p class="text-white">We challenge ourselves to be intentional in everything we do. Especially the things that are working. It's easy to fix what's broken. It's harder to question success. By constantly asking why, we stay aligned with our mission and avoid drifting into autopilot.</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-            <div class="image-box-thumb">
-              <img class="img-fullwidth" alt="" src="http://placehold.it/250x135">
-              <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled team-social-icon clearfix mt-10">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="image-box-details pt-15 pb-sm-20">
-              <a href="#">
-                <h4 class="title text-uppercase text-white font-weight-600 mt-0 mb-5">Ownership</h4>
-              </a>
-              <h6 class="text-gray-lightgray mt-0"><em>Full Accountability</em></h6>
-              <p class="text-white">We believe in full ownership. Every action is logged, tracked, and visible, not for micromanagement, but for accountability. High agency creates clarity. And clarity creates satisfaction, performance, and trust.</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-            <div class="image-box-thumb">
-              <img class="img-fullwidth" alt="" src="http://placehold.it/250x135">
-              <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled team-social-icon clearfix mt-10">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              </ul>
-            </div>
-            <div class="image-box-details pt-15 pb-sm-20">
-              <a href="#">
-                <h4 class="title text-uppercase text-white font-weight-600 mt-0 mb-5">Process</h4>
-              </a>
-              <h6 class="text-gray-lightgray mt-0"><em>Systematic Approach</em></h6>
-              <p class="text-white">Our team follows a disciplined six-step framework: Client Discovery, List Building, Account Qualification, Contact Verification, Relationship Nurturing, and Opportunity Identification. When experiments prove successful, they become a process. Process creates consistency. Automation creates leverage. Leverage creates scalable growth.</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -585,74 +565,118 @@
   </section>
 
   <!-- Section: Our Technology Stack -->
-  <section class="bg-lighter">
-    <div class="container pb-50 pb-sm-0">
-      <div class="section-content">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="font-30 font-weight-500 line-bottom-theme-colored2 mt-0 mb-20">Our <span class="text-theme-colored2">Technology Stack</span></h3>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="icon-box left media">
-                  <div class="media-left pull-left flip">
-                    <div class="icon bg-theme-colored2 text-white">
-                      <i class="fa fa-cogs font-36"></i>
-                    </div>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="text-uppercase">Custom In-House CRM</h4>
-                    <p>We have built our own custom in-house CRM with integrated email automation to streamline marketing efforts.</p>
-                  </div>
-                </div>
+  <section class="ts-section">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="ts-header">
+        <div class="row ts-header-row">
+          <div class="col-md-7">
+            <span class="ts-eyebrow">Built for Scale</span>
+            <h2 class="ts-main-title">Our <span class="ts-title-accent">Technology Stack</span></h2>
+            <p class="ts-subtitle">Purpose-built tools and industry-leading platforms that power every SALT campaign — from first contact to closed opportunity.</p>
+          </div>
+          <div class="col-md-5 ts-header-stats-col">
+            <div class="ts-inline-stats" id="techStats">
+              <div class="ts-inline-stat">
+                <span class="ts-inline-num" data-target="60">0</span><span class="ts-inline-suf">+</span>
+                <span class="ts-inline-label">LinkedIn Programs</span>
               </div>
-              <div class="col-md-6">
-                <div class="icon-box left media">
-                  <div class="media-left pull-left flip">
-                    <div class="icon bg-theme-colored2 text-white">
-                      <i class="fa fa-database font-36"></i>
-                    </div>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="text-uppercase">Industry-Leading Tools</h4>
-                    <p>Subscriptions to industry-leading tools, such as ZoomInfo, Hoovers D&amp;B, and Data Axle, provide robust market insights.</p>
-                  </div>
-                </div>
+              <div class="ts-inline-stat">
+                <span class="ts-inline-num" data-target="400">0</span><span class="ts-inline-suf">+</span>
+                <span class="ts-inline-label">Programs Built</span>
+              </div>
+              <div class="ts-inline-stat">
+                <span class="ts-inline-num" data-target="10">0</span><span class="ts-inline-suf">+</span>
+                <span class="ts-inline-label">Years Experience</span>
               </div>
             </div>
-
-            <!-- Animated Stats Row -->
-            <div class="tech-stats-row" id="techStats">
-              <div class="tech-stat-item">
-                <span class="tech-stat-num" data-target="60">0</span>
-                <span class="tech-stat-suffix">+</span>
-                <p class="tech-stat-label">LinkedIn Programs</p>
-              </div>
-              <div class="tech-stat-item">
-                <span class="tech-stat-num" data-target="400">0</span>
-                <span class="tech-stat-suffix">+</span>
-                <p class="tech-stat-label">Business Programs Built</p>
-              </div>
-              <div class="tech-stat-item">
-                <span class="tech-stat-num" data-target="3">0</span>
-                <span class="tech-stat-suffix"></span>
-                <p class="tech-stat-label">Data Platforms</p>
-              </div>
-              <div class="tech-stat-item">
-                <span class="tech-stat-num" data-target="10">0</span>
-                <span class="tech-stat-suffix">+</span>
-                <p class="tech-stat-label">Years Experience</p>
-              </div>
-            </div>
-
-            <div class="col-md-12 mt-10">
-              <div class="text-center">
-                <h4 class="text-theme-colored2">Check Marketing Off Your List.</h4>
-                <p class="lead">We support nearly 60 LinkedIn programs, ensuring effective outreach and engagement.</p>
-              </div>
-            </div>
-
           </div>
         </div>
+      </div>
+
+      <!-- Tile Grid -->
+      <div class="row ts-tiles-row">
+
+        <!-- Tile 1: Custom In-House CRM -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile">
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">Custom In-House CRM</h4>
+              <p class="ts-tile-desc">Proprietary CRM with integrated email automation, built specifically for outbound sales at scale.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 2: Industry-Leading Data -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile">
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-database"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">Industry-Leading Data</h4>
+              <p class="ts-tile-desc">Subscriptions to ZoomInfo, Hoovers D&amp;B, and Data Axle for verified, high-quality prospect intelligence.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 3: Outbound Email Automation Platform -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile">
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-paper-plane"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">Outbound Email Automation Platform</h4>
+              <p class="ts-tile-desc">Automated multi-touch email sequences with deliverability tracking, A/B testing, and response management.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 4: LinkedIn Outbound Software -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile">
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">LinkedIn Outbound Software</h4>
+              <p class="ts-tile-desc">Dedicated LinkedIn campaign management tools powering 60+ active programs for targeted B2B outreach.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 5: Pipeline Visualization Dashboard -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile">
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-bar-chart"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">Pipeline Visualization Dashboard</h4>
+              <p class="ts-tile-desc">Real-time pipeline tracking with full visibility into activity, stage progress, and opportunity status.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 6: Reverse IP Lookup (Coming Soon) -->
+        <div class="col-xs-12 col-sm-6 col-md-4 ts-tile-wrap">
+          <div class="ts-tile ts-tile-soon">
+            <span class="ts-coming-soon">Coming Soon</span>
+            <div class="ts-tile-icon-wrap">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="ts-tile-body">
+              <h4 class="ts-tile-title">Reverse IP Lookup</h4>
+              <p class="ts-tile-desc">Identify companies visiting your website anonymously, enabling proactive outreach to warm, intent-driven prospects.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -681,7 +705,7 @@
       function runCounters() {
         if (animated) return;
         animated = true;
-        document.querySelectorAll('#techStats .tech-stat-num').forEach(function(el) {
+        document.querySelectorAll('.ts-inline-num').forEach(function(el) {
           countUp(el, parseInt(el.getAttribute('data-target'), 10), 1800);
         });
       }
@@ -701,28 +725,6 @@
       if (section) observer.observe(section);
     })();
   </script>
-
-  <!-- Divider: Clients -->
-  <section class="clients bg-theme-colored2">
-    <div class="container pt-0 pb-0">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="owl-carousel-6col clients-logo transparent text-center">
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-            <div class="item"> <a href="#"><img src="http://placehold.it/200x120" alt=""></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </div>
 <!-- end main-content -->
@@ -761,10 +763,10 @@
         <div class="widget dark">
           <h4 class="widget-title line-bottom-theme-colored2">Useful Links</h4>
           <ul class="list-border">
-            <li style="padding: 5px;"><a href="pricinghtml">Pricing</a></li>
-            <li style="padding: 5px;"><a href="processhtml">Process</a></li>
-            <li style="padding: 5px;"><a href="crmhtml">CRM</a></li>
-            <li style="padding: 5px;"><a href="https://login.salt-crm.com/loginhtml">CRM Login</a></li>
+            <li style="padding: 5px;"><a href="pricing.php">Pricing</a></li>
+            <li style="padding: 5px;"><a href="process.php">Process</a></li>
+            <li style="padding: 5px;"><a href="crm.php">CRM</a></li>
+            <li style="padding: 5px;"><a href="https://login.salt-crm.com/login.php">CRM Login</a></li>
           </ul>
         </div>
       </div>
@@ -781,7 +783,7 @@
             <div class="widget no-border m-0">
               <ul class="list-inline sm-text-center mt-5 font-14">
                 <li>
-                  <a href="https://login.salt-crm.com/toshtml">Privacy Policy & Terms of Use</a>
+                  <a href="https://login.salt-crm.com/tos.php">Privacy Policy & Terms of Use</a>
                 </li>
               </ul>
             </div>
@@ -814,8 +816,8 @@
             success: function(data) {
               if (data.status == 'true') {
                 $(form).find('.form-control').val('');
-                // Redirect to thankshtml
-                window.location.href = 'thankshtml';
+                // Redirect to thanks.php
+                window.location.href = 'thanks.php';
               }
               form_btn.prop('disabled', false).html(form_btn_old_msg);
               $(form_result_div).html(data.message).fadeIn('slow');
@@ -857,6 +859,10 @@
     gtag('config', 'AW-924319768');
   </script>
   <!-- End Google tag (gtag.js) Submit Lead Form Conversion Tracking-->
+  <!-- Lead forensics tag -->
+  <script async type="text/javascript" src="https://secure.leadforensics.com/js/162869.js"></script>
+  <noscript><img alt="" src="https://secure.leadforensics.com/162869.png" style="display:none;" /></noscript>
+  <!-- Lead forensics tag -->
 
   </body>
 
