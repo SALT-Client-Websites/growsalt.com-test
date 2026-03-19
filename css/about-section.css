@@ -502,9 +502,6 @@
 
 .about-img-wrap {
   overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.12);
-  background: #f0ede9;
 }
 
 .about-portrait {
